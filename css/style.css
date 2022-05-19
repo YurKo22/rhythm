@@ -1,4 +1,15 @@
+/* ------------ шрифти ----------------- */
 @import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap);
+
+@font-face {
+   font-family: CalSans;
+   font-display: swap;
+   font-style: normal;
+   font-weight: 600;
+   src: url("../fonts/CalSans-SemiBold.woff") format("woff"),
+   url("../fonts/CalSans-SemiBold.woff2") format("woff2");
+}
+/* ---------------- обнулення ----------------------- */
 *,
 *::before,
 *::after {
@@ -7,7 +18,6 @@
   border: none;
   box-sizing: border-box;
 }
-
 html,
 body {
   height: 100%;
@@ -23,10 +33,27 @@ a {
 li {
   list-style: none;
 }
-/* ---------------------------------------- */
+/* ---------------- контейнери ------------------------ */
 .wrapper {
   overflow: hidden;
   min-height: 100%;
   display: flex;
   flex-direction: column;
 }
+[class*="__container"] {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+/* ---------------- структура блоку main ----------------- */
+.page {
+	flex: 1 1 auto;
+}
+.page__main {}
+.page__store {}
+.page__categories {}
+.page__brands {}
+.page__why {}
+.page__reviews {}
+.page__favorite{}
+/* ---------------------------------------- */
