@@ -41,16 +41,12 @@ li {
   display: flex;
   flex-direction: column;
 }
-[class*="__container"] {
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0px 15px;
-}
 /* ------------- структура блоку main ----------------- */
 .page {
   flex: 1 1 auto;
 }
 .page__main {
+   align-self: flex-end;
 }
 .page__store {
 }
@@ -64,7 +60,12 @@ li {
 }
 .page__favorite {
 }
-
+/* ---------------------------------------------- */
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+   padding: 0px 15px;
+ }
 /* ---------------- header ---------------------- */
 .header {
   position: absolute;
@@ -116,7 +117,7 @@ li {
    display: flex;
 }
 .main__content {
-   flex: 0 1 50%;
+   align-self: flex-end;
 }
 .main__title {
 }
@@ -124,14 +125,15 @@ li {
 }
 .main__actions {
 }
+
 .actions-main {
 }
 .actions-main__button {
 }
 .actions-main__icon {
 }
+
 .main__decor {
-   flex: 0 1 50%;
 }
 .main__image {
 }
